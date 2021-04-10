@@ -21,6 +21,13 @@
 
   <dependencies>
     <dependency>
+    <!--
+    	downgrade parent's 20180813 version or org.mapfish.print.servlet.MapPrinterServlet.getInfo
+    	throws java.lang.NoSuchMethodError: org.json.JSONWriter.<init>(Ljava/io/Writer;)V
+    -->
+      <json.version>20080701</json.version>
+    </dependency>   
+    <dependency>
       <groupId>org.geoserver</groupId>
       <artifactId>gs-main</artifactId>
     </dependency>
